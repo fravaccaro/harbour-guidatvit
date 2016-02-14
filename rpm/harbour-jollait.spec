@@ -14,7 +14,7 @@ Name:       harbour-jollait
 %{?qtc_builddir:%define _builddir %qtc_builddir}
 Summary:        Jolla Community Italia WebView
 Version:        0.1
-Release:        2
+Release:        3
 Group:          Qt/Qt
 License:        BSD
 Packager:       fravaccaro <fravaccaro@jollacommunity.it>
