@@ -1,0 +1,7 @@
+[Desktop Entry]
+Type=Application
+X-Nemo-Application-Type=silica-qt5
+Icon=harbour-jollait
+Exec=sailfish-qml harbour-jollait
+Name=Jolla Community Italia
+Name[it_IT]=Jolla Community Italia
