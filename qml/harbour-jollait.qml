@@ -29,13 +29,14 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 import QtQuick 2.0
 import Sailfish.Silica 1.0
 import "pages"
+import "cover"
 
 ApplicationWindow
 {
     id: window
     initialPage: Component { FirstPage { } }
     property string webViewUrl: "http://jollacommunity.it/"
-    cover: undefined
+    cover: CoverPage { }
     allowedOrientations: Orientation.All
     _defaultPageOrientations: Orientation.All
 }

@@ -49,6 +49,13 @@
     </message>
 </context>
 <context>
+    <name>CoverPage</name>
+    <message>
+        <source>Jolla Italia</source>
+        <translation>Jolla Italia</translation>
+    </message>
+</context>
+<context>
     <name>FirstPage</name>
     <message>
         <source>Reload</source>
@@ -59,12 +66,12 @@
         <translation>Preferiti</translation>
     </message>
     <message>
-        <source>Back to home page</source>
-        <translation>Torna alla home</translation>
-    </message>
-    <message>
         <source>Loading...</source>
         <translation>Caricamento...</translation>
+    </message>
+    <message>
+        <source>Back</source>
+        <translation>Indietro</translation>
     </message>
 </context>
 <context>

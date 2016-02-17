@@ -49,3 +49,4 @@ DISTFILES += \
     translations/harbour-jollait.ts \
     translations/harbour-jollait-it.ts \
     qml/pages/BookmarkPage.qml \
+    qml/cover/CoverPage.qml

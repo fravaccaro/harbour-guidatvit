@@ -47,9 +47,6 @@ Page {
 
     SilicaWebView {
         PullDownMenu {
-            MenuLabel {
-                text: webView.title
-            }
             MenuItem {
                 text: qsTr("Reload")
                 onClicked: {
@@ -65,12 +62,12 @@ Page {
                 }
             }
             MenuItem {
-                text: qsTr("Back to home page")
-                onClicked: {
-                    console.log("Back to home page")
-                    webView.url = "http://jollacommunity.it/"
+                    text: qsTr("Back")
+                    onClicked: {
+                        console.log("go back")
+                        webView.goBack()
+                    }
                 }
-            }
         }
         id: webView
         ViewPlaceholder {
@@ -81,6 +78,7 @@ Page {
         anchors.fill: parent
         url: window.webViewUrl
         quickScroll : true
+        _allowFocusAnimation: false
         experimental.userScripts: [
             Qt.resolvedUrl("devicePixelRatioHack.js"),
         ]

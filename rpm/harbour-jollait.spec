@@ -13,8 +13,8 @@ Name:       harbour-jollait
 %{!?qtc_make:%define qtc_make make}
 %{?qtc_builddir:%define _builddir %qtc_builddir}
 Summary:        Jolla Community Italia WebView
-Version:        0.1
-Release:        3
+Version:        0.2.0
+Release:        6
 Group:          Qt/Qt
 License:        BSD
 Packager:       fravaccaro <fravaccaro@jollacommunity.it>
@@ -71,5 +71,9 @@ desktop-file-install --delete-original       \
 # << files
 
 %changelog
+* Wed Feb 17 2016 0.2.0
+- Added back button.
+- Added cover.
+
 * Sun Feb 14 2016 0.1
 - First public release.
