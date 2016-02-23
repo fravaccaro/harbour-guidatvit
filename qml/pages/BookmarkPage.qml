@@ -1,8 +1,4 @@
 /*
-jollait - Jolla Community Italia WebView. Access to Jolla Community Italia, read news and discuss on the forum.
-Copyright (C) 2016,  fravaccaro <fravaccaro90@gmail.com>
-All rights reserved.
-
   Copyright (C) 2015-2016 jollailija
   Contact: jollailija <jollailija@gmail.com>
   All rights reserved.
@@ -88,7 +84,7 @@ Page {
                 }
             }
             MenuItem {
-                text: qsTr("Add current page")
+                text: qsTr("Add current page to bookmarks:")
                 onClicked: {
                     Storage.initialize()
                     Storage.addBookmark(name, url)
@@ -155,6 +151,7 @@ Page {
             width: parent.width
             onClicked: {
                 window.webViewUrl = model.url
+                console.log("model.url "+model.url)
                 pageStack.pop(undefined, PageStackAction.Immediate)
             }
             Label {

@@ -44,7 +44,7 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Add current page</source>
+        <source>Add current page to bookmarks:</source>
         <translation type="unfinished"></translation>
     </message>
 </context>

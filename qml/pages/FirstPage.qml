@@ -3,7 +3,7 @@ jollait - Jolla Community Italia WebView. Access to Jolla Community Italia, read
 Copyright (C) 2016,  fravaccaro <fravaccaro90@gmail.com>
 All rights reserved.
 
-  Copyright (C) 2015-2016 jollailija
+  Copyright (C) 2016 jollailija
   Contact: jollailija <jollailija@gmail.com>
   All rights reserved.
 
@@ -29,7 +29,6 @@ All rights reserved.
   ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
   (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
   SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
-
 */
 
 import QtQuick 2.1

@@ -44,8 +44,8 @@
         <translation>Cerca</translation>
     </message>
     <message>
-        <source>Add current page</source>
-        <translation>Aggiungi pagina corrente</translation>
+        <source>Add current page to bookmarks:</source>
+        <translation>Aggiungi pagina corrente:</translation>
     </message>
 </context>
 <context>
