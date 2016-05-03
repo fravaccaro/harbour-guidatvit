@@ -89,7 +89,7 @@ Page {
         url: "http://www.jollacommunity.it"
         PullDownMenu {
             MenuLabel {
-                text: qsTr("Jolla Italia") + " 0.3"
+                text: qsTr("Jolla Italia WebView") + " 0.3"
             }
             MenuItem {
                 text: navPanel.open ? qsTr("Hide navigation bar")

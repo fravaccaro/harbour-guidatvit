@@ -66,7 +66,7 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Jolla Italia</source>
+        <source>Jolla Italia WebView</source>
         <translation type="unfinished"></translation>
     </message>
 </context>

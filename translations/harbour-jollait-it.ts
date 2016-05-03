@@ -71,8 +71,8 @@
     <name>FirstPage</name>
     <message>
         <location filename="../qml/pages/FirstPage.qml" line="92"/>
-        <source>Jolla Italia</source>
-        <translation>Jolla Italia</translation>
+        <source>Jolla Italia WebView</source>
+        <translation>Jolla Italia WebView</translation>
     </message>
     <message>
         <location filename="../qml/pages/FirstPage.qml" line="95"/>
