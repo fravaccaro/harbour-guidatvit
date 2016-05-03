@@ -21,17 +21,21 @@ qml.path = /usr/share/harbour-jollait/qml
 desktop.files = harbour-jollait.desktop
 desktop.path = /usr/share/applications
 
+appicons.path = /usr/share/icons/hicolor/
+appicons.files = appicons/*
+
 OTHER_FILES += \
     qml/* \
     qml/pages/* \
+    qml/pages/storage.js \
+    qml/pages/BookmarkPage.qml \
+    qml/pages/devicePixelRatioHack.js \
     rpm/harbour-jollait.spec \
     translations/*.ts \
+    translations/harbour-jollait.ts \
+    translations/harbour-jollait-it.ts \
     harbour-jollait.desktop \
-    harbour-jollait.png \
-    qml/harbour-jollait.png \
-    rpm/harbour-jollait.changes \
-    qml/pages/harbour-jollait.png \
-    qml/harbour-jollait.png
+    harbour-jollait.png
 
 # to disable building translations every time, comment out the
 # following CONFIG line
@@ -39,14 +43,7 @@ CONFIG += sailfishapp_i18n
 
 TRANSLATIONS += translations/harbour-jollait-it.ts
 
-appicons.path = /usr/share/icons/hicolor/
-appicons.files = appicons/*
-
 INSTALLS += appicons qml desktop
 
 DISTFILES += \
-    qml/pages/storage.js \
-    translations/harbour-jollait.ts \
-    translations/harbour-jollait-it.ts \
-    qml/pages/BookmarkPage.qml \
     qml/cover/CoverPage.qml
