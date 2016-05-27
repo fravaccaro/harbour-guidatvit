@@ -13,8 +13,8 @@ Name:       harbour-jollait
 %{!?qtc_make:%define qtc_make make}
 %{?qtc_builddir:%define _builddir %qtc_builddir}
 Summary:        Jolla Community Italia WebView
-Version:        0.3.0
-Release:        3
+Version:        0.3.1
+Release:        1
 Group:          Qt/Qt
 License:        BSD
 Packager:       fravaccaro <fravaccaro@jollacommunity.it>
@@ -72,6 +72,9 @@ desktop-file-install --delete-original       \
 
 
 %changelog
+* Fri May 27 2016 0.3.1
+- Icon changed.
+
 * Thu May 3 2016 0.3.0
 - Added navbar. 
 
