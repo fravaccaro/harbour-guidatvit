@@ -69,6 +69,10 @@
         <source>Jolla Italia WebView</source>
         <translation type="unfinished"></translation>
     </message>
+    <message>
+        <source>Open in browser</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>Help</name>

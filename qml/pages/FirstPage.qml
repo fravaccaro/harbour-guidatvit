@@ -98,6 +98,10 @@ Page {
                     navPanel.open ? navPanel.open = false : navPanel.open = true
                 }
             }
+            MenuItem {
+                text: qsTr("Open in browser")
+                onClicked: Qt.openUrlExternally(webView.url)
+            }
             /*MenuItem {
                 text: qsTr("Reload")
                 onClicked: {

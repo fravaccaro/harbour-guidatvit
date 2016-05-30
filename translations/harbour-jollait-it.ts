@@ -84,5 +84,10 @@
         <source>Open navigation bar</source>
         <translation>Mostra navbar</translation>
     </message>
+    <message>
+        <location filename="../qml/pages/FirstPage.qml" line="102"/>
+        <source>Open in browser</source>
+        <translation>Apri nel browser</translation>
+    </message>
 </context>
 </TS>
