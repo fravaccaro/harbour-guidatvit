@@ -34,7 +34,7 @@ import QtQuick.LocalStorage 2.0
 import "storage.js" as Storage
 
 Page {
-    id: firstPage
+    id: hylePage
     allowedOrientations: Orientation.All
     BookmarkPage {id: bookmarkPage} // just don't. I know it's wrong, but the freaking bug won't die!
 
@@ -61,16 +61,16 @@ Page {
             anchors.centerIn: parent
             spacing: Theme.paddingLarge
             IconButton {
+                icon.source: "image://theme/icon-m-back"
+                onClicked: pageStack.push("FirstPage.qml")
+            }
+            IconButton {
                 icon.source: "image://theme/icon-m-refresh"
                 onClicked: webView.reload()
             }
             IconButton {
                 icon.source: "image://theme/icon-m-favorite"
                 onClicked: pageStack.push(bookmarkPage,{"name": webView.title, "url": webView.url})
-            }
-            IconButton {
-                icon.source: "image://theme/icon-m-forward"
-                onClicked: pageStack.push("HylePage.qml")
             }
         }
     }
@@ -83,7 +83,7 @@ Page {
             fill: parent
             bottomMargin: navPanel.visibleSize
         }
-        url: "file:///usr/share/harbour-guidatvit/qml/html/oraintv.html"
+        url: "https://hyle.appspot.com/palinsesto/serata"
         PullDownMenu {
             MenuLabel {
                 text: qsTr("Guida TV Italia") + " 0.1.0"
@@ -95,41 +95,7 @@ Page {
                     navPanel.open ? navPanel.open = false : navPanel.open = true
                 }
             }
-            MenuItem {
-                text: qsTr("Movies")
-                onClicked: {
-                    console.log("movies")
-                    webView.url = "file:///usr/share/harbour-guidatvit/qml/html/film.html"
-                }
-            }
-            MenuItem {
-                text: qsTr("Sport")
-                onClicked: {
-                    console.log("sport")
-                    webView.url = "file:///usr/share/harbour-guidatvit/qml/html/sport.html"
-                }
-            }
-            MenuItem {
-                text: qsTr("Channels")
-                onClicked: {
-                    console.log("channels")
-                    webView.url = "file:///usr/share/harbour-guidatvit/qml/html/canali.html"
-                }
-            }
-            MenuItem {
-                text: qsTr("Prime time")
-                onClicked: {
-                    console.log("primetime")
-                    webView.url = "file:///usr/share/harbour-guidatvit/qml/html/primaserata.html"
-                }
-            }
-            MenuItem {
-                text: qsTr("Live")
-                onClicked: {
-                    console.log("live")
-                    webView.url = "file:///usr/share/harbour-guidatvit/qml/html/oraintv.html"
-                }
-            }
+
         }
         BusyIndicator {
             anchors.centerIn: parent
@@ -139,14 +105,6 @@ Page {
         experimental.userScripts: [
             Qt.resolvedUrl("devicePixelRatioHack.js"),
         ]
-
-        onNavigationRequested : {
-                    console.debug("request.url: ", request.url)
-                    if (request.navigationType === webView.LinkClickedNavigation) {
-                        request.action = webView.IgnoreRequest
-                        Qt.openUrlExternally(request.url)
-                    }
-                }
 
     }
 }

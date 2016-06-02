@@ -39,13 +39,13 @@ CoverBackground {
 
     Image {
         anchors.horizontalCenter: parent.horizontalCenter
-        source: "/usr/share/icons/hicolor/86x86/apps/harbour-jollait.png"
+        source: "/usr/share/icons/hicolor/86x86/apps/harbour-guidatvit.png"
     }
     Label {
         id: label
         color: Theme.highlightColor
         anchors.horizontalCenter: parent.horizontalCenter
-        text: qsTr("Jolla Italia")
+        text: qsTr("TV Guide")
 
     }
   }

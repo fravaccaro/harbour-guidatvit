@@ -51,7 +51,7 @@
 <context>
     <name>CoverPage</name>
     <message>
-        <source>Jolla Italia</source>
+        <source>TV Guide</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -66,11 +66,27 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Jolla Italia WebView</source>
+        <source>Guida TV Italia</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Open in browser</source>
+        <source>Movies</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Sport</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Channels</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Prime time</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Live</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -79,6 +95,21 @@
     <message>
         <source></source>
         <translation></translation>
+    </message>
+</context>
+<context>
+    <name>HylePage</name>
+    <message>
+        <source>Guida TV Italia</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Hide navigation bar</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Open navigation bar</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 </TS>

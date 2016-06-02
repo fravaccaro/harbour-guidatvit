@@ -21,7 +21,7 @@
     <message>
         <location filename="../qml/pages/BookmarkPage.qml" line="107"/>
         <source>Bookmarks</source>
-        <translation>Segnalibri</translation>
+        <translation>Preferiti</translation>
     </message>
     <message>
         <location filename="../qml/pages/BookmarkPage.qml" line="125"/>
@@ -63,31 +63,69 @@
     <name>CoverPage</name>
     <message>
         <location filename="../qml/cover/CoverPage.qml" line="48"/>
-        <source>Jolla Italia</source>
-        <translation>Jolla Italia</translation>
+        <source>TV Guide</source>
+        <translation>Guida TV</translation>
     </message>
 </context>
 <context>
     <name>FirstPage</name>
     <message>
-        <location filename="../qml/pages/FirstPage.qml" line="92"/>
-        <source>Jolla Italia WebView</source>
-        <translation>Jolla Italia WebView</translation>
+        <location filename="../qml/pages/FirstPage.qml" line="89"/>
+        <source>Guida TV Italia</source>
+        <translation>Guida TV Italia</translation>
     </message>
     <message>
-        <location filename="../qml/pages/FirstPage.qml" line="95"/>
+        <location filename="../qml/pages/FirstPage.qml" line="92"/>
         <source>Hide navigation bar</source>
         <translation>Nascondi navbar</translation>
     </message>
     <message>
-        <location filename="../qml/pages/FirstPage.qml" line="96"/>
+        <location filename="../qml/pages/FirstPage.qml" line="93"/>
         <source>Open navigation bar</source>
         <translation>Mostra navbar</translation>
     </message>
     <message>
-        <location filename="../qml/pages/FirstPage.qml" line="102"/>
-        <source>Open in browser</source>
-        <translation>Apri nel browser</translation>
+        <location filename="../qml/pages/FirstPage.qml" line="99"/>
+        <source>Movies</source>
+        <translation>Film</translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/FirstPage.qml" line="106"/>
+        <source>Sport</source>
+        <translation>Sport</translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/FirstPage.qml" line="113"/>
+        <source>Channels</source>
+        <translation>Canali</translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/FirstPage.qml" line="120"/>
+        <source>Prime time</source>
+        <translation>Prima serata</translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/FirstPage.qml" line="127"/>
+        <source>Live</source>
+        <translation>Ora in TV</translation>
+    </message>
+</context>
+<context>
+    <name>HylePage</name>
+    <message>
+        <location filename="../qml/pages/HylePage.qml" line="89"/>
+        <source>Guida TV Italia</source>
+        <translation>Guida TV Italia</translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/HylePage.qml" line="92"/>
+        <source>Hide navigation bar</source>
+        <translation>Nascondi navbar</translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/HylePage.qml" line="93"/>
+        <source>Open navigation bar</source>
+        <translation>Mostra navbar</translation>
     </message>
 </context>
 </TS>

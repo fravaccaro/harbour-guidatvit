@@ -1,0 +1,7 @@
+[Desktop Entry]
+Type=Application
+X-Nemo-Application-Type=silica-qt5
+Icon=harbour-guidatvit
+Exec=sailfish-qml harbour-guidatvit
+Name=Guida TV
+Name[it_IT]=Guida TV
