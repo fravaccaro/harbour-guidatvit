@@ -70,62 +70,47 @@
 <context>
     <name>FirstPage</name>
     <message>
-        <location filename="../qml/pages/FirstPage.qml" line="89"/>
+        <location filename="../qml/pages/FirstPage.qml" line="101"/>
         <source>Guida TV Italia</source>
         <translation>Guida TV Italia</translation>
     </message>
     <message>
-        <location filename="../qml/pages/FirstPage.qml" line="92"/>
+        <location filename="../qml/pages/FirstPage.qml" line="104"/>
         <source>Hide navigation bar</source>
         <translation>Nascondi navbar</translation>
     </message>
     <message>
-        <location filename="../qml/pages/FirstPage.qml" line="93"/>
+        <location filename="../qml/pages/FirstPage.qml" line="105"/>
         <source>Open navigation bar</source>
         <translation>Mostra navbar</translation>
     </message>
     <message>
-        <location filename="../qml/pages/FirstPage.qml" line="99"/>
-        <source>Movies</source>
-        <translation>Film</translation>
-    </message>
-    <message>
-        <location filename="../qml/pages/FirstPage.qml" line="106"/>
-        <source>Sport</source>
-        <translation>Sport</translation>
-    </message>
-    <message>
-        <location filename="../qml/pages/FirstPage.qml" line="113"/>
-        <source>Channels</source>
-        <translation>Canali</translation>
-    </message>
-    <message>
-        <location filename="../qml/pages/FirstPage.qml" line="120"/>
-        <source>Prime time</source>
-        <translation>Prima serata</translation>
-    </message>
-    <message>
-        <location filename="../qml/pages/FirstPage.qml" line="127"/>
-        <source>Live</source>
-        <translation>Ora in TV</translation>
+        <location filename="../qml/pages/FirstPage.qml" line="111"/>
+        <source>Open in browser</source>
+        <translation>Apri nel browser</translation>
     </message>
 </context>
 <context>
     <name>HylePage</name>
     <message>
-        <location filename="../qml/pages/HylePage.qml" line="89"/>
+        <location filename="../qml/pages/HylePage.qml" line="95"/>
         <source>Guida TV Italia</source>
         <translation>Guida TV Italia</translation>
     </message>
     <message>
-        <location filename="../qml/pages/HylePage.qml" line="92"/>
+        <location filename="../qml/pages/HylePage.qml" line="98"/>
         <source>Hide navigation bar</source>
         <translation>Nascondi navbar</translation>
     </message>
     <message>
-        <location filename="../qml/pages/HylePage.qml" line="93"/>
+        <location filename="../qml/pages/HylePage.qml" line="99"/>
         <source>Open navigation bar</source>
         <translation>Mostra navbar</translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/HylePage.qml" line="105"/>
+        <source>Open in browser</source>
+        <translation>Apri nel browser</translation>
     </message>
 </context>
 </TS>

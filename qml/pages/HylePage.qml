@@ -49,6 +49,7 @@ Page {
             }
         }
     }
+
     DockedPanel {
         id: navPanel
         dock: Dock.Bottom
@@ -57,20 +58,25 @@ Page {
         open: true // todo: open and close on scroll
         _immediate: true // no lag when opening or closing
 
+        IconButton {
+            icon.source: "image://theme/icon-m-back"
+            anchors {
+                left: parent.Left
+                margins: Theme.paddingLarge
+            }
+            onClicked: webView.goBack()
+            enabled: webView.canGoBack
+        }
         Row {
             anchors.centerIn: parent
             spacing: Theme.paddingLarge
             IconButton {
-                icon.source: "image://theme/icon-m-back"
-                onClicked: pageStack.push("FirstPage.qml")
+                icon.source: "image://theme/icon-m-favorite"
+                onClicked: pageStack.push(bookmarkPage,{"name": webView.title, "url": webView.url})
             }
             IconButton {
                 icon.source: "image://theme/icon-m-refresh"
                 onClicked: webView.reload()
-            }
-            IconButton {
-                icon.source: "image://theme/icon-m-favorite"
-                onClicked: pageStack.push(bookmarkPage,{"name": webView.title, "url": webView.url})
             }
         }
     }
@@ -86,7 +92,7 @@ Page {
         url: "https://hyle.appspot.com/palinsesto/serata"
         PullDownMenu {
             MenuLabel {
-                text: qsTr("Guida TV Italia") + " 0.1.0"
+                text: qsTr("Guida TV Italia") + " 0.1.1"
             }
             MenuItem {
                 text: navPanel.open ? qsTr("Hide navigation bar")
@@ -94,6 +100,10 @@ Page {
                 onClicked: {
                     navPanel.open ? navPanel.open = false : navPanel.open = true
                 }
+            }
+            MenuItem {
+                text: qsTr("Open in browser")
+                onClicked: Qt.openUrlExternally(webView.url)
             }
 
         }

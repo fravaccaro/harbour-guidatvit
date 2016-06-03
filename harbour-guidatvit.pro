@@ -27,7 +27,6 @@ appicons.files = appicons/*
 OTHER_FILES += \
     qml/* \
     qml/pages/* \
-    qml/html/* \
     qml/pages/storage.js \
     qml/pages/BookmarkPage.qml \
     qml/pages/devicePixelRatioHack.js \
@@ -55,7 +54,6 @@ DISTFILES += \
     html/primaserata.html \
     html/sport.html \
     qml/html/style.css \
-    qml/html/canali.html \
     qml/html/film.html \
     qml/html/oraintv.html \
     qml/html/primaserata.html \

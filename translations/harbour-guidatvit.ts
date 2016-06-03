@@ -70,23 +70,7 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Movies</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Sport</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Channels</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Prime time</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Live</source>
+        <source>Open in browser</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -109,6 +93,10 @@
     </message>
     <message>
         <source>Open navigation bar</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Open in browser</source>
         <translation type="unfinished"></translation>
     </message>
 </context>

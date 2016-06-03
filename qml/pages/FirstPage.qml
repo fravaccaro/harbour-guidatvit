@@ -49,6 +49,13 @@ Page {
             }
         }
     }
+
+    onStatusChanged: {
+        if (status === PageStatus.Active && pageStack.depth === 1) {
+            pageStack.pushAttached("HylePage.qml", {});
+        }
+    }
+
     DockedPanel {
         id: navPanel
         dock: Dock.Bottom
@@ -57,20 +64,25 @@ Page {
         open: true // todo: open and close on scroll
         _immediate: true // no lag when opening or closing
 
+        IconButton {
+            icon.source: "image://theme/icon-m-back"
+            anchors {
+                left: parent.Left
+                margins: Theme.paddingLarge
+            }
+            onClicked: webView.goBack()
+            enabled: webView.canGoBack
+        }
         Row {
             anchors.centerIn: parent
             spacing: Theme.paddingLarge
-            IconButton {
-                icon.source: "image://theme/icon-m-refresh"
-                onClicked: webView.reload()
-            }
             IconButton {
                 icon.source: "image://theme/icon-m-favorite"
                 onClicked: pageStack.push(bookmarkPage,{"name": webView.title, "url": webView.url})
             }
             IconButton {
-                icon.source: "image://theme/icon-m-forward"
-                onClicked: pageStack.push("HylePage.qml")
+                icon.source: "image://theme/icon-m-refresh"
+                onClicked: webView.reload()
             }
         }
     }
@@ -83,10 +95,10 @@ Page {
             fill: parent
             bottomMargin: navPanel.visibleSize
         }
-        url: "file:///usr/share/harbour-guidatvit/qml/html/oraintv.html"
+        url: "http://tv.zam.it/gadget/gadget_tv.php?fsize=20"
         PullDownMenu {
             MenuLabel {
-                text: qsTr("Guida TV Italia") + " 0.1.0"
+                text: qsTr("Guida TV Italia") + " 0.1.1"
             }
             MenuItem {
                 text: navPanel.open ? qsTr("Hide navigation bar")
@@ -96,39 +108,8 @@ Page {
                 }
             }
             MenuItem {
-                text: qsTr("Movies")
-                onClicked: {
-                    console.log("movies")
-                    webView.url = "file:///usr/share/harbour-guidatvit/qml/html/film.html"
-                }
-            }
-            MenuItem {
-                text: qsTr("Sport")
-                onClicked: {
-                    console.log("sport")
-                    webView.url = "file:///usr/share/harbour-guidatvit/qml/html/sport.html"
-                }
-            }
-            MenuItem {
-                text: qsTr("Channels")
-                onClicked: {
-                    console.log("channels")
-                    webView.url = "file:///usr/share/harbour-guidatvit/qml/html/canali.html"
-                }
-            }
-            MenuItem {
-                text: qsTr("Prime time")
-                onClicked: {
-                    console.log("primetime")
-                    webView.url = "file:///usr/share/harbour-guidatvit/qml/html/primaserata.html"
-                }
-            }
-            MenuItem {
-                text: qsTr("Live")
-                onClicked: {
-                    console.log("live")
-                    webView.url = "file:///usr/share/harbour-guidatvit/qml/html/oraintv.html"
-                }
+                text: qsTr("Open in browser")
+                onClicked: Qt.openUrlExternally(webView.url)
             }
         }
         BusyIndicator {
@@ -140,13 +121,14 @@ Page {
             Qt.resolvedUrl("devicePixelRatioHack.js"),
         ]
 
-        onNavigationRequested : {
-                    console.debug("request.url: ", request.url)
-                    if (request.navigationType === webView.LinkClickedNavigation) {
-                        request.action = webView.IgnoreRequest
-                        Qt.openUrlExternally(request.url)
-                    }
-                }
+        onNavigationRequested: {
+          var stringurl = request.url.toString();
+
+          if(stringurl.indexOf("fsize=") === -1) {
+            request.action = WebView.IgnoreRequest;
+            webView.url = stringurl += "?&fsize=20";
+          }
+        }
 
     }
 }
