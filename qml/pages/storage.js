@@ -35,7 +35,7 @@
 //storage.js
 // First, let's create a short helper function to get the database connection
 function getDatabase() {
-    return LocalStorage.openDatabaseSync("JunatNetBookmarks", "2.0", "JunatNetBookmarks", 100000); // Just needed some new names so there won't be db version errors popping up all over the place
+    return LocalStorage.openDatabaseSync("guidatvitDB", "2.0", "guidatvitDB", 100000);
 }
 
 // At the start of the application, we can initialize the tables we need if they haven't been created yet
