@@ -70,22 +70,22 @@
 <context>
     <name>FirstPage</name>
     <message>
-        <location filename="../qml/pages/FirstPage.qml" line="101"/>
+        <location filename="../qml/pages/FirstPage.qml" line="109"/>
         <source>Guida TV Italia</source>
         <translation>Guida TV Italia</translation>
     </message>
     <message>
-        <location filename="../qml/pages/FirstPage.qml" line="104"/>
+        <location filename="../qml/pages/FirstPage.qml" line="112"/>
         <source>Hide navigation bar</source>
         <translation>Nascondi navbar</translation>
     </message>
     <message>
-        <location filename="../qml/pages/FirstPage.qml" line="105"/>
+        <location filename="../qml/pages/FirstPage.qml" line="113"/>
         <source>Open navigation bar</source>
         <translation>Mostra navbar</translation>
     </message>
     <message>
-        <location filename="../qml/pages/FirstPage.qml" line="111"/>
+        <location filename="../qml/pages/FirstPage.qml" line="119"/>
         <source>Open in browser</source>
         <translation>Apri nel browser</translation>
     </message>
@@ -93,24 +93,32 @@
 <context>
     <name>HylePage</name>
     <message>
-        <location filename="../qml/pages/HylePage.qml" line="95"/>
+        <location filename="../qml/pages/HylePage.qml" line="103"/>
         <source>Guida TV Italia</source>
         <translation>Guida TV Italia</translation>
     </message>
     <message>
-        <location filename="../qml/pages/HylePage.qml" line="98"/>
+        <location filename="../qml/pages/HylePage.qml" line="106"/>
         <source>Hide navigation bar</source>
         <translation>Nascondi navbar</translation>
     </message>
     <message>
-        <location filename="../qml/pages/HylePage.qml" line="99"/>
+        <location filename="../qml/pages/HylePage.qml" line="107"/>
         <source>Open navigation bar</source>
         <translation>Mostra navbar</translation>
     </message>
     <message>
-        <location filename="../qml/pages/HylePage.qml" line="105"/>
+        <location filename="../qml/pages/HylePage.qml" line="113"/>
         <source>Open in browser</source>
         <translation>Apri nel browser</translation>
+    </message>
+</context>
+<context>
+    <name>IdlePage</name>
+    <message>
+        <location filename="../qml/pages/IdlePage.qml" line="20"/>
+        <source>Idle</source>
+        <translation>In pausa</translation>
     </message>
 </context>
 </TS>

@@ -40,12 +40,20 @@ Page {
 
     property bool zoom: false // This is for choosing the pixelratiohack
 
-    // Workaround for 'High Power Consumption' webkit bug by mkiol
+    Timer {
+	id: timer
+	interval: 120000
+	repeat: true
+	onTriggered: pageStack.replace('IdlePage.qml')
+    }
+
     Connections {
         target: Qt.application
         onActiveChanged: {
-            if(!Qt.application.active && settings.powerSaveMode) {
-                pageStack.pop();
+            if(!Qt.application.active) {
+	timer.restart()
+            } else {
+	timer.stop()
             }
         }
     }
@@ -98,7 +106,7 @@ Page {
         url: "http://tv.zam.it/gadget/gadget_tv.php?fsize=20"
         PullDownMenu {
             MenuLabel {
-                text: qsTr("Guida TV Italia") + " 0.1.1"
+                text: qsTr("Guida TV Italia") + " 0.1.4"
             }
             MenuItem {
                 text: navPanel.open ? qsTr("Hide navigation bar")

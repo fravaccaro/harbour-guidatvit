@@ -13,8 +13,8 @@ Name:       harbour-guidatvit
 %{!?qtc_make:%define qtc_make make}
 %{?qtc_builddir:%define _builddir %qtc_builddir}
 Summary:        Guida TV Italia
-Version:        0.1.2
-Release:        2
+Version:        0.1.4
+Release:        1
 Group:          Qt/Qt
 License:        BSD
 Packager:       fravaccaro <fravaccaro@jollacommunity.it>
@@ -72,6 +72,12 @@ desktop-file-install --delete-original       \
 
 
 %changelog
+* Tue Jun 7 2016 0.1.4
+- Fixed webview high-power consumption.
+
+* Sun Jun 5 2016 0.1.3
+- Database fix.
+
 * Thu Jun 2 2016 0.1.1
 - UI fixes.
 
