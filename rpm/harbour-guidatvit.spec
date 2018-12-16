@@ -13,10 +13,10 @@ Name:       harbour-guidatvit
 %{!?qtc_make:%define qtc_make make}
 %{?qtc_builddir:%define _builddir %qtc_builddir}
 Summary:        Guida TV Italia
-Version:        0.1.4
+Version:        0.1.5
 Release:        1
 Group:          Qt/Qt
-License:        BSD
+License:        GPLv3
 Packager:       fravaccaro <fravaccaro@jollacommunity.it>
 URL:            www.jollacommunity.it
 Source0:        %{name}-%{version}.tar.bz2
@@ -26,7 +26,7 @@ Requires:       libsailfishapp-launcher
 BuildRequires:  desktop-file-utils
 
 %description
-TV Guide for the main Italian TV channels. Powered by TV Zam and teleguida.tv.
+TV Guide for the main Italian TV channels. Powered by TV Zam.
 
 
 %prep
@@ -69,17 +69,3 @@ desktop-file-install --delete-original       \
 %{_datadir}/icons/hicolor/256x256/apps/%{name}.png
 # >> files
 # << files
-
-
-%changelog
-* Tue Jun 7 2016 0.1.4
-- Fixed webview high-power consumption.
-
-* Sun Jun 5 2016 0.1.3
-- Database fix.
-
-* Thu Jun 2 2016 0.1.1
-- UI fixes.
-
-* Thu Jun 2 2016 0.1.0
-- First public release.

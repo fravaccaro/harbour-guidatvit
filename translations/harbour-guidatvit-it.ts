@@ -2,6 +2,54 @@
 <!DOCTYPE TS>
 <TS version="2.1" language="it_IT">
 <context>
+    <name>AboutPage</name>
+    <message>
+        <location filename="../qml/pages/AboutPage.qml" line="55"/>
+        <source>About</source>
+        <translation>Info</translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/AboutPage.qml" line="71"/>
+        <source>TV Guide for the main Italian TV channels. Powered by Quotidiano.net.</source>
+        <translation>Guida TV per i principali canali TV italiani. A cura di Quotidiano.net.</translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/AboutPage.qml" line="75"/>
+        <source>Released under the &lt;a href=&apos;https://www.gnu.org/licenses/gpl-3.0&apos;&gt;GNU GPLv3&lt;/a&gt; license.</source>
+        <translation>Rilasciato sotto licenza &lt;a href=&apos;https://www.gnu.org/licenses/gpl-3.0&apos;&gt;GNU GPLv3&lt;/a&gt;.</translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/AboutPage.qml" line="80"/>
+        <source>Sources</source>
+        <translation>Sorgenti</translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/AboutPage.qml" line="84"/>
+        <source>Support</source>
+        <translation>Supporta</translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/AboutPage.qml" line="87"/>
+        <source>If you like my work and want to buy me a beer, feel free to do it!</source>
+        <translation>Se ti piace il mio lavoro, sentiti libero di offrirmi una birra!</translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/AboutPage.qml" line="92"/>
+        <source>Donate</source>
+        <translation>Dona</translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/AboutPage.qml" line="96"/>
+        <source>Credits</source>
+        <translation>Crediti</translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/AboutPage.qml" line="99"/>
+        <source>Based on &lt;a href=&apos;https://github.com/jollailija/junatnet&apos;&gt;Junat.net WebView&lt;/a&gt; by jollailija.</source>
+        <translation>Basato su &lt;a href=&apos;https://github.com/jollailija/junatnet&apos;&gt;Junat.net WebView&lt;/a&gt; di jollailija.</translation>
+    </message>
+</context>
+<context>
     <name>BookmarkPage</name>
     <message>
         <location filename="../qml/pages/BookmarkPage.qml" line="80"/>
@@ -60,55 +108,14 @@
     </message>
 </context>
 <context>
-    <name>CoverPage</name>
-    <message>
-        <location filename="../qml/cover/CoverPage.qml" line="48"/>
-        <source>TV Guide</source>
-        <translation>Guida TV</translation>
-    </message>
-</context>
-<context>
     <name>FirstPage</name>
     <message>
-        <location filename="../qml/pages/FirstPage.qml" line="109"/>
-        <source>Guida TV Italia</source>
-        <translation>Guida TV Italia</translation>
+        <location filename="../qml/pages/FirstPage.qml" line="122"/>
+        <source>About</source>
+        <translation>Info</translation>
     </message>
     <message>
-        <location filename="../qml/pages/FirstPage.qml" line="112"/>
-        <source>Hide navigation bar</source>
-        <translation>Nascondi navbar</translation>
-    </message>
-    <message>
-        <location filename="../qml/pages/FirstPage.qml" line="113"/>
-        <source>Open navigation bar</source>
-        <translation>Mostra navbar</translation>
-    </message>
-    <message>
-        <location filename="../qml/pages/FirstPage.qml" line="119"/>
-        <source>Open in browser</source>
-        <translation>Apri nel browser</translation>
-    </message>
-</context>
-<context>
-    <name>HylePage</name>
-    <message>
-        <location filename="../qml/pages/HylePage.qml" line="103"/>
-        <source>Guida TV Italia</source>
-        <translation>Guida TV Italia</translation>
-    </message>
-    <message>
-        <location filename="../qml/pages/HylePage.qml" line="106"/>
-        <source>Hide navigation bar</source>
-        <translation>Nascondi navbar</translation>
-    </message>
-    <message>
-        <location filename="../qml/pages/HylePage.qml" line="107"/>
-        <source>Open navigation bar</source>
-        <translation>Mostra navbar</translation>
-    </message>
-    <message>
-        <location filename="../qml/pages/HylePage.qml" line="113"/>
+        <location filename="../qml/pages/FirstPage.qml" line="126"/>
         <source>Open in browser</source>
         <translation>Apri nel browser</translation>
     </message>

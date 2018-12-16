@@ -32,23 +32,18 @@ import QtQuick 2.0
 import Sailfish.Silica 1.0
 
 CoverBackground {
-    Column {
-        anchors.centerIn: parent
+
+    Image
+    {
+        id: coverimg
+        fillMode: Image.PreserveAspectFit
+        source: "./coverbg.png"
+        opacity: 0.6
+        anchors.horizontalCenter: parent.horizontalCenter
         width: parent.width
-        spacing: Theme.paddingMedium
-
-    Image {
-        anchors.horizontalCenter: parent.horizontalCenter
-        source: "/usr/share/icons/hicolor/86x86/apps/harbour-guidatvit.png"
+        height: sourceSize.height * width / sourceSize.width
     }
-    Label {
-        id: label
-        color: Theme.highlightColor
-        anchors.horizontalCenter: parent.horizontalCenter
-        text: qsTr("TV Guide")
 
-    }
-  }
 }
 
 

@@ -37,6 +37,6 @@ ApplicationWindow
     id: window
     initialPage: Component { FirstPage { } }
     cover: CoverPage { }
-    allowedOrientations: Orientation.All
-    _defaultPageOrientations: Orientation.All
+    allowedOrientations: defaultAllowedOrientations
+    _defaultPageOrientations: defaultAllowedOrientations
 }

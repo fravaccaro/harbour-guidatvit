@@ -25,15 +25,22 @@ appicons.path = /usr/share/icons/hicolor/
 appicons.files = appicons/*
 
 OTHER_FILES += \
-    qml/* \
-    qml/pages/* \
-    qml/pages/storage.js \
+    qml/harbour-guidatvit.qml \
+    qml/pages/AboutPage.qml \
     qml/pages/BookmarkPage.qml \
+    qml/pages/FirstPage.qml \
+    qml/pages/IdlePage.qml \
+    qml/components/BackgroundRectangle.qml \
+    qml/components/BusyState.qml \
+    qml/components/LabelText.qml \
+    qml/components/dockedbar/DockedBar.qml \
+    qml/cover/CoverPage.qml \
     qml/pages/devicePixelRatioHack.js \
+    qml/pages/storage.js \
+    qml/pages/appinfo.png \
+    qml/cover/coverbg.png \
     rpm/harbour-guidatvit.spec \
-    translations/*.ts \
-    translations/harbour-guidatvit.ts \
-    translations/harbour-guidatvit-it.ts \
+    rpm/harbour-guidatvit.changes \
     harbour-guidatvit.desktop \
     harbour-guidatvit.png
 
@@ -41,21 +48,7 @@ OTHER_FILES += \
 # following CONFIG line
 CONFIG += sailfishapp_i18n
 
-TRANSLATIONS += translations/harbour-guidatvit-it.ts
+TRANSLATIONS += translations/*.ts
 
 INSTALLS += appicons qml desktop
 
-DISTFILES += \
-    qml/cover/CoverPage.qml \
-    html/style.css \
-    html/canali.html \
-    html/film.html \
-    html/oraintv.html \
-    html/primaserata.html \
-    html/sport.html \
-    qml/html/style.css \
-    qml/html/film.html \
-    qml/html/oraintv.html \
-    qml/html/primaserata.html \
-    qml/html/sport.html \
-    qml/pages/HylePage.qml
