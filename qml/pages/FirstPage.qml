@@ -39,6 +39,7 @@ Page {
     id: page
     focus: true
 
+    property string webviewurl
     BookmarkPage {id: bookmarkPage} // just don't. I know it's wrong, but the freaking bug won't die!
 
     property bool zoom: false // This is for choosing the pixelratiohack
@@ -47,7 +48,7 @@ Page {
         id: timer
         interval: 120000
         repeat: true
-        onTriggered: pageStack.replace('IdlePage.qml')
+        onTriggered: pageStack.replace('IdlePage.qml', { "webviewurl": webView.url })
     }
 
     Connections {
@@ -98,7 +99,7 @@ Page {
            }
 
            if (event.key === Qt.Key_H) {
-               webView.url = "https://www.jollacommunity.it";
+               webView.url = "https://guidatv.quotidiano.net/";
                event.accepted = true;
            }
 
@@ -115,7 +116,7 @@ Page {
         anchors.fill: parent
         anchors.bottomMargin: dockedbar.height
         clip: true
-        url: "https://guidatv.quotidiano.net/"
+        url: (webviewurl !== "") ? webviewurl : "https://guidatv.quotidiano.net/"
 
         PullDownMenu {
             MenuItem {

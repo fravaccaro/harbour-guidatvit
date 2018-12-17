@@ -3,12 +3,13 @@ import Sailfish.Silica 1.0
 
 Page {
 	id: idlePage
+    property string webviewurl
 
        	Connections {
     	   	target: Qt.application
        		onActiveChanged: {
 		       	if(Qt.application.active) {
-				pageStack.replace('FirstPage.qml')
+                pageStack.replace('FirstPage.qml', { "webviewurl": webviewurl })
 		       	}
 		}
 	}
